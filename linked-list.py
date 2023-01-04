@@ -1,12 +1,12 @@
 class Node(object):
     
-    """
-    A node in a linked list.
+    
+    # A node in a linked list.
 
-    Attributes:
-    - data (int): The data stored in the node.
-    - next (Node): A reference to the next node in the list.
-    """
+    # Attributes:
+    # - data (int): The data stored in the node.
+    # - next (Node): A reference to the next node in the list.
+    
     
     def __init__(self, data, next=None):
         self.data = data
@@ -16,10 +16,24 @@ class Node(object):
 
 
     def setNext(self, next):
+        
+    
+    # Sets the reference to the next node in the list.
+
+    # Args:
+    # - next (Node): The next node in the list.
+       
+        
         self.next = next
 
 
 class LinkedList(object):
+    
+    # A linked list data structure.
+
+    # Attributes:
+    # - head (Node): The head node of the list.
+
     
     def __init__(self):
         self.head = None
@@ -27,6 +41,9 @@ class LinkedList(object):
         
         
     def printList(self):
+        
+    # Prints the data of all the nodes in the list
+    
         temp = self.head
         while(temp):
             print(f'{temp.data}-> ', end="")
@@ -38,6 +55,13 @@ class LinkedList(object):
         
         
     def searchList(self, key):
+        
+    # Searches for a node with the given key in the list.
+    # Prints a message indicating whether the key was found or not.
+
+    # Args:
+    # - key (int): The data to search for in the list.    
+        
         temp = self.head
             
         while(temp):
@@ -52,6 +76,12 @@ class LinkedList(object):
     
     
     def insertAtStart(self, data):
+        
+    # Inserts a new node with the given data at the beginning of the list.
+
+    # Args:
+    # - data (int): The data to be stored in the new node.    
+        
         if self.head == None:
             newNode = Node(data)
             self.head = newNode
@@ -66,6 +96,13 @@ class LinkedList(object):
 
 
     def insertInBetween(self, previousNode, data):
+        
+    # Inserts a new node with the given data after the specified previous node.
+
+    # Args:
+    # - previous_node (Node): The node after which the new node should be inserted.
+    # - data (int): The data to be stored in the new node.    
+        
         if previousNode.next is None:
             print("Previous node not found [None]\n")
         else:
@@ -77,6 +114,12 @@ class LinkedList(object):
             
             
     def insertAtEnd(self, data):
+        
+    # Inserts a new node with the given data at the end of the list.
+
+    # Args:
+    # - data (int): The data to be stored in the new node.    
+        
         newNode = Node(data)
         temp = self.head       
         while(temp.next !=None):
