@@ -7,6 +7,7 @@ PYTHON 3.10
 
 
 ```python
-"TABLE OF CONTENTS"```
+"TABLE OF CONTENTS"
+```
 
 `>` Linked-List (DataStructure)
