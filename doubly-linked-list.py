@@ -30,5 +30,13 @@ class DoublyLinkedList(object):
                 print(f"{temp.data}-> ", end="")
                 temp = temp.next
                 
+                
+                
+if __name__ == "__main__":
+    
+    dll = DoublyLinkedList()
+    dll.insertAtStart(1)
+    dll.insertAtStart(45)
+    dll.printDLL()
             
         
