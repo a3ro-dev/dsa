@@ -130,33 +130,33 @@ if __name__ == "__main__":  # fix syntax error
     
     try:
         List = LinkedList()
-        a = int(input("Enter List Head:\n"))
+        a = input("Enter List Head:\n")
         List.head = Node(a)
-        b = int(input("Enter Node 2's Vale:\n"))
+        b = input("Enter Node 2's Vale:\n")
         Node2 = Node(b)
-        c = int(input("Enter Node 3's Vale\n"))
+        c = input("Enter Node 3's Vale\n")
         Node3 = Node(c)
     
         List.head.setNext(Node2)
         Node2.setNext(Node3)
     
-        d = int(input("Please enter the 1st value that you would like to insert at the end.\n"))
+        d = input("Please enter the 1st value that you would like to insert at the end.\n")
         List.insertAtEnd(d)
-        f = int(input("Please enter the 2nd value that you would like to insert at the end.\n"))
+        f = input("Please enter the 2nd value that you would like to insert at the end.\n")
         List.insertAtEnd(f)
-        g = int(input("Please enter the 3rd value that you would like to insert at the end.\n"))
+        g = input("Please enter the 3rd value that you would like to insert at the end.\n")
         List.insertAtEnd(g)
-        h = int(input("Please enter the 4th value that you would like to insert at the end.\n"))
+        h = input("Please enter the 4th value that you would like to insert at the end.\n")
         List.insertAtEnd(h)
     
-        i = int(input(f"Please enter the value that you would like to insert in between Node2 {Node2}\n"))
+        i = input(f"Please enter the value that you would like to insert in between Node2 {Node2}\n")
         List.insertInBetween(Node2, i)
     
-        j = int(input(f"Please enter the value that you would like to insert at the beginning.\n"))
+        j = input(f"Please enter the value that you would like to insert at the beginning.\n")
         List.insertAtStart(j)
         List.printList()  
 
-        l = int(input(f"Please enter the value that you would like to search for\n"))
+        l = input(f"Please enter the value that you would like to search for\n")
         List.searchList(l)
         
     except Exception as e:

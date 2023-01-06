@@ -96,13 +96,21 @@ class DoublyLinkedList(object):
                 
 if __name__ == "__main__":
     
-    dll = DoublyLinkedList()
-    dll.insertAtStart(1)
-    dll.insertAtStart(45)
-    dll.insertAtEnd(9)
-
-    dll.printDLL()
-    dll.searchDLList(45)
- 
-            
+   try:
+        dll = DoublyLinkedList()
+        a = input("Please enter the 1st value that you would like to insert at the start.\n")
+        dll.insertAtStart(a)
+        b = input("Please enter the 2nd value that you would like to insert at the start.\n")
+        dll.insertAtStart(b)
+        c = input("Please enter the 3rd value that you would like to insert at the end.\n")
+        dll.insertAtEnd(c)
         
+        dll.printDLL()
+        d = input("Please enter the value that you would like to be searched for.\n")
+        dll.searchDLList(d)
+        
+   except Exception as e:
+       print(e)
+ 
+   finally:
+       print("Doubly Linked List Finished!")
