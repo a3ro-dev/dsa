@@ -75,7 +75,8 @@ class DoublyLinkedList(object):
                 
             temp.next = newNode
             newNode.previous = temp
-            
+
+
     def searchDLList(self, key):
         
         # Searches for a node with the given key in the list.
