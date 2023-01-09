@@ -48,6 +48,18 @@ class DoublyLinkedList(object):
             self.head.previous = newNode
             newNode.next = self.head
             self.head = newNode
+            
+    # def insertInBetween(self, previous, data):
+    #     if previous == None:
+    #         print("This node doesn't exist in DLL")
+    #         return
+        
+    #     newNode = Node(data)
+    #     newNode.next = previous.next
+    #     previous.next = newNode
+    #     newNode.previous = previous
+    #     if newNode.next != None:
+    #         newNode.next.previous = newNode  
         
     def printDLL(self):
         
@@ -73,8 +85,8 @@ class DoublyLinkedList(object):
         while(temp.next != None):
             temp = temp.next
                 
-            temp.next = newNode
-            newNode.previous = temp
+        temp.next = newNode
+        newNode.previous = temp
 
 
     def searchDLList(self, key):
@@ -99,15 +111,16 @@ if __name__ == "__main__":
     
    try:
         dll = DoublyLinkedList()
-        a = input("Please enter the 1st value that you would like to insert at the start.\n")
+
+        a = int(input("Please enter the 1st value that you would like to insert at the start.\n"))
         dll.insertAtStart(a)
-        b = input("Please enter the 2nd value that you would like to insert at the start.\n")
+        b = int(input("Please enter the 2nd value that you would like to insert at the start.\n"))
         dll.insertAtStart(b)
-        c = input("Please enter the 3rd value that you would like to insert at the end.\n")
+        c = int(input("Please enter the 3rd value that you would like to insert at the end.\n"))
         dll.insertAtEnd(c)
         
         dll.printDLL()
-        d = input("Please enter the value that you would like to be searched for.\n")
+        d = int(input("Please enter the value that you would like to be searched for.\n"))
         dll.searchDLList(d)
         
    except Exception as e:
