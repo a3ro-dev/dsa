@@ -12,11 +12,17 @@ PYTHON 3.10
 
 `>` Linked-List (DataStructure)
 ```xml
-to use the data structure, add:
+to use the data structure, import it like this:
 ```
 ```python
 import linked-list 
 ```
+# ---------------------------------------------
+
+`>` Doubly-linked-List (DataStructure)
+```xml
+to use the data structure, import it like this:
 ```
-on top of the file
+```python
+import doubly-linked-list
 ```
