@@ -15,7 +15,8 @@ PYTHON 3.10
 to use the data structure, import it like this:
 ```
 ```python
-import linked-list 
+import linked_list 
+ll = linked_list.LinkedList()
 ```
 # ---------------------------------------------
 
@@ -24,5 +25,17 @@ import linked-list
 to use the data structure, import it like this:
 ```
 ```python
-import doubly-linked-list
+import doubly_linked_list
+dll = doubly_linked_list.DoublyLinkedList()
 ```
+# ---------------------------------------------
+
+`>` Stack (DataStructure)
+```xml
+to use the data structure, import it like this:
+```
+```python
+import stack
+stack = stack.stack()
+```
+
