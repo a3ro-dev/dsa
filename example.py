@@ -7,9 +7,10 @@ stackk.push(1)
 stackk.pop()
 
 
+
 ll = linked_list.LinkedList()
 ll.head = linked_list.Node(5)
-ll.insertAtStart(10)
+ll.insertAtStart(11)
 ll.insertAtEnd(20)
 ll.printList()
 
